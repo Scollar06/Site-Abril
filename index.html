@@ -92,29 +92,30 @@
         </footer>
     
       </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      <script>
+        // Seleciona todos os links do menu de navegação
+        const botoesMenu = document.querySelectorAll("nav a");
     
+        // Seleciona todas as seções com a classe "secao"
+        const secoes = document.querySelectorAll(".secao");
+    
+        // Para cada botão do menu, adiciona um ouvinte de clique
+        botoesMenu.forEach(botao => {
+          botao.addEventListener("click", (e) => {
+            e.preventDefault(); // Impede o comportamento padrão do link (navegar para a âncora)
+            const alvo = botao.getAttribute("href").replace("#", ""); // Obtém o ID da seção de destino
+    
+            if (alvo === "home") {
+              // Se for "home", exibe todas as seções
+              secoes.forEach(secao => secao.style.display = "block");
+            } else {
+              // Caso contrário, mostra apenas a seção clicada e oculta as outras
+              secoes.forEach(secao => {
+                secao.style.display = secao.id === alvo ? "block" : "none";
+              });
+            }
+          });
+        });
+      </script>
 </body>
 </html>
