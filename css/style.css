@@ -115,3 +115,13 @@
   .logo-footer {
     height: 40px; /* Altura do ícone no rodapé */
   }
+
+  .imagem-topo {
+    width: 100%; /* Largura total */
+    max-width: 400px; /* Largura máxima */
+    height: auto; /* Altura proporcional */
+    display: block; /* Faz a imagem ocupar uma linha inteira */
+    margin: 20px auto; /* Centraliza e espaça a imagem */
+    border: 4px solid #d3ebe2; /* Borda */
+    border-radius: 10px; /* Cantos arredondados */
+  }
