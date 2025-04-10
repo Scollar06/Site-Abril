@@ -44,3 +44,25 @@
     border-radius: 5px; /* Cantos arredondados */
     transition: background 0.3s; /* Suaviza a transição da cor de fundo */
   }
+
+  .menu-centralizado li a:hover,
+.menu-centralizado li a.btn-jogar {
+  background-color: #b5d3c5; /* Altera a cor de fundo ao passar o mouse ou se for o botão "jogar" */
+}
+
+.logo img {
+  height: 80px; /* Define altura do logo */
+}
+
+.secao {
+  padding: 60px 20px; /* Espaçamento interno da seção */
+  text-align: center; /* Centraliza o conteúdo */
+  max-width: 900px; /* Largura máxima */
+  margin: 0 auto; /* Centraliza a seção na tela */
+}
+
+.secao h2 {
+  margin-bottom: 20px; /* Espaço inferior do título */
+  font-size: 2rem; /* Tamanho da fonte */
+  color: #88a09e; /* Cor do título */
+}
