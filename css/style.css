@@ -103,3 +103,15 @@
   .btn-jogar-grande:hover {
     background-color: #a8cfc6; /* Cor ao passar o mouse */
   }
+
+  footer {
+    background-color: #f0f4f3; /* Cor de fundo do rodapé */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza texto */
+    font-size: 0.9rem; /* Tamanho do texto */
+    color: #6a7d7c; /* Cor do texto */
+  }
+  
+  .logo-footer {
+    height: 40px; /* Altura do ícone no rodapé */
+  }
