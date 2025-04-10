@@ -189,3 +189,52 @@
     border-radius: 10px; /* Cantos arredondados */
     box-shadow: 0 0 10px rgba(173, 216, 190, 0.6); /* Sombra verde suave */
   }
+
+  @media (max-width: 768px) { /* Estilos para telas menores que 768px */
+    nav {
+      flex-direction: column; /* Empilha os elementos verticalmente */
+      align-items: center; /* Centraliza os itens */
+      padding: 10px; /* Reduz padding */
+    }
+  
+    nav ul {
+      flex-direction: column; /* Empilha os links */
+      align-items: center; /* Centraliza os links */
+      gap: 15px; /* Espaço entre os links */
+    }
+  
+    .secao {
+      padding: 30px 15px; /* Reduz padding das seções */
+    }
+  
+    h1, h2 {
+      font-size: 1.5rem; /* Reduz tamanho dos títulos */
+    }
+  
+    .galeria {
+      flex-direction: column; /* Empilha as imagens verticalmente */
+      align-items: center; /* Centraliza as imagens */
+    }
+  
+    .galeria img {
+      width: 90%; /* Imagens mais adaptáveis */
+    }
+  
+    .form-contato {
+      width: 95%; /* Formulário mais estreito */
+      padding: 20px; /* Menor padding interno */
+    }
+  
+    .btn-jogar-grande {
+      width: 100%; /* Botão ocupa largura total */
+      text-align: center; /* Texto centralizado */
+    }
+  
+    .imagem-topo {
+      width: 90%; /* Imagem topo mais responsiva */
+    }
+  
+    footer {
+      font-size: 0.8rem; /* Tamanho menor no rodapé */
+    }
+  }
