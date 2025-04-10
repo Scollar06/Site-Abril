@@ -87,3 +87,19 @@
   .galeria img:hover {
     transform: scale(1.05); /* Aumenta a imagem ao passar o mouse */
   }
+
+  .btn-jogar-grande {
+    display: inline-block; /* Permite definir largura e altura */
+    margin-top: 20px; /* Espaço acima do botão */
+    background-color: #c0ded9; /* Cor de fundo */
+    color: #35524a; /* Cor do texto */
+    padding: 15px 30px; /* Espaçamento interno */
+    font-size: 1rem; /* Tamanho da fonte */
+    text-decoration: none; /* Remove sublinhado */
+    border-radius: 10px; /* Cantos arredondados */
+    transition: background 0.3s; /* Suaviza a transição de cor */
+  }
+  
+  .btn-jogar-grande:hover {
+    background-color: #a8cfc6; /* Cor ao passar o mouse */
+  }
