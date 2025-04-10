@@ -28,3 +28,19 @@
     padding: 15px; /* Espaçamento interno */
     background-color: #c3e4d1; /* Cor de fundo do menu */
   }
+
+  .menu-centralizado {
+    list-style: none; /* Remove os marcadores da lista */
+    display: flex; /* Alinha os itens lado a lado */
+    gap: 20px; /* Espaçamento entre os itens */
+  }
+  
+  .menu-centralizado li a {
+    color: #35524a; /* Cor do texto dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-weight: bold; /* Deixa o texto em negrito */
+    background-color: #e5f4ea; /* Cor de fundo dos links */
+    padding: 8px 15px; /* Espaçamento interno */
+    border-radius: 5px; /* Cantos arredondados */
+    transition: background 0.3s; /* Suaviza a transição da cor de fundo */
+  }
