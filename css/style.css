@@ -14,4 +14,17 @@
     background-attachment: fixed; /* Faz o fundo permanecer fixo ao rolar a página */
     color: #4a4a4a; /* Define a cor padrão do texto */
   }
+
+  .overlay {
+    background-color: rgba(255, 255, 255, 0.6); /* Fundo branco translúcido */
+    min-height: 100vh; /* Garante altura mínima igual à altura da tela */
+    padding: 0; /* Remove padding interno */
+  }
   
+  nav {
+    display: flex; /* Usa flexbox para alinhar os elementos do menu */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    padding: 15px; /* Espaçamento interno */
+    background-color: #c3e4d1; /* Cor de fundo do menu */
+  }
