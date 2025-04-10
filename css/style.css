@@ -66,3 +66,24 @@
   font-size: 2rem; /* Tamanho da fonte */
   color: #88a09e; /* Cor do título */
 }
+
+.galeria {
+    display: flex; /* Flexbox para alinhar imagens */
+    flex-wrap: wrap; /* Permite quebra de linha */
+    justify-content: center; /* Centraliza as imagens */
+    gap: 20px; /* Espaçamento entre imagens */
+    margin-top: 20px; /* Espaço acima da galeria */
+  }
+  
+  .galeria img {
+    width: 300px; /* Largura fixa das imagens */
+    height: auto; /* Altura proporcional */
+    border-radius: 8px; /* Cantos arredondados */
+    border: 3px solid #d3ebe2; /* Borda das imagens */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra suave */
+    transition: transform 0.3s ease; /* Animação suave ao ampliar */
+  }
+  
+  .galeria img:hover {
+    transform: scale(1.05); /* Aumenta a imagem ao passar o mouse */
+  }
