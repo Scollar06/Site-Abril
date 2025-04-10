@@ -182,3 +182,10 @@
   .form-contato button:hover {
     background-color: #a8cfc6; /* Cor ao passar o mouse */
   }
+
+  .icone-bmo img {
+    width: 90px; /* Largura da imagem */
+    height: auto; /* Altura proporcional */
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0 0 10px rgba(173, 216, 190, 0.6); /* Sombra verde suave */
+  }
