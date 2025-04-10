@@ -1,0 +1,17 @@
+* {
+    margin: 0; /* Remove a margem padrão de todos os elementos */
+    padding: 0; /* Remove o preenchimento interno padrão */
+    box-sizing: border-box; /* Inclui bordas e padding no cálculo do tamanho total dos elementos */
+  }
+  
+  body {
+    font-family: 'Press Start 2P', monospace; /* Define a fonte principal como Press Start 2P */
+    font-size: 16px; /* Define o tamanho padrão da fonte */
+    background-image: url('minecraft-fundo.jpg'); /* Define imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    background-attachment: fixed; /* Faz o fundo permanecer fixo ao rolar a página */
+    color: #4a4a4a; /* Define a cor padrão do texto */
+  }
+  
