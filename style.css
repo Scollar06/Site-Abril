@@ -25,14 +25,14 @@
     display: flex; /* Usa flexbox para alinhar os elementos do menu */
     align-items: center; /* Alinha os itens verticalmente ao centro */
     justify-content: center; /* Centraliza os itens horizontalmente */
-    padding: 15px; /* Espaçamento interno */
-    background-color: #c3e4d1; /* Cor de fundo do menu */
+    padding: 10px; /* Espaçamento interno */
+    background-color: #5c5e5d; /* Cor de fundo do menu */
   }
 
   .menu-centralizado {
     list-style: none; /* Remove os marcadores da lista */
     display: flex; /* Alinha os itens lado a lado */
-    gap: 20px; /* Espaçamento entre os itens */
+    gap: 70px; /* Espaçamento entre os itens */
   }
   
   .menu-centralizado li a {
@@ -64,7 +64,7 @@
 .secao h2 {
   margin-bottom: 20px; /* Espaço inferior do título */
   font-size: 2rem; /* Tamanho da fonte */
-  color: #632b0b; /* Cor do título */
+  color: #c2510f; /* Cor do título */
 }
 
 .galeria {
@@ -72,7 +72,7 @@
     flex-wrap: wrap; /* Permite quebra de linha */
     justify-content: center; /* Centraliza as imagens */
     gap: 20px; /* Espaçamento entre imagens */
-    margin-top: 20px; /* Espaço acima da galeria */
+    margin-top: 15px; /* Espaço acima da galeria */
   }
   
   .galeria img {
@@ -105,7 +105,7 @@
   }
 
   footer {
-    background-color: #f0f4f3; /* Cor de fundo do rodapé */
+    background-color: #5c5e5d; /* Cor de fundo do rodapé */
     padding: 20px; /* Espaçamento interno */
     text-align: center; /* Centraliza texto */
     font-size: 0.9rem; /* Tamanho do texto */
@@ -113,12 +113,12 @@
   }
   
   .logo-footer {
-    height: 40px; /* Altura do ícone no rodapé */
+    height: 60px; /* Altura do ícone no rodapé */
   }
 
   .imagem-topo {
     width: 100%; /* Largura total */
-    max-width: 400px; /* Largura máxima */
+    max-width: 700px; /* Largura máxima */
     height: auto; /* Altura proporcional */
     display: block; /* Faz a imagem ocupar uma linha inteira */
     margin: 20px auto; /* Centraliza e espaça a imagem */
