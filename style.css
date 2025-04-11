@@ -6,13 +6,13 @@
   
   body {
     font-family: 'Press Start 2P', monospace; /* Define a fonte principal como Press Start 2P */
-    font-size: 16px; /* Define o tamanho padrão da fonte */
-    background-image: url('minecraft-fundo.jpg'); /* Define imagem de fundo */
+    font-size: 20px; /* Define o tamanho padrão da fonte */
+    background-image: url('imagens/fundo.webp'); /* Define imagem de fundo */
     background-size: cover; /* Faz a imagem cobrir toda a tela */
     background-position: center; /* Centraliza a imagem de fundo */
     background-repeat: no-repeat; /* Evita repetição da imagem */
     background-attachment: fixed; /* Faz o fundo permanecer fixo ao rolar a página */
-    color: #4a4a4a; /* Define a cor padrão do texto */
+    color: #000000; /* Define a cor padrão do texto */
   }
 
   .overlay {
@@ -64,7 +64,7 @@
 .secao h2 {
   margin-bottom: 20px; /* Espaço inferior do título */
   font-size: 2rem; /* Tamanho da fonte */
-  color: #88a09e; /* Cor do título */
+  color: #632b0b; /* Cor do título */
 }
 
 .galeria {
