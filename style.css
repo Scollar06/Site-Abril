@@ -101,7 +101,8 @@
   }
   
   .btn-jogar-grande:hover {
-    background-color: #a8cfc6; /* Cor ao passar o mouse */
+    background-color: #252c2a; /* Cor ao passar o mouse */
+    color: #a8cfc6; /* Cor do texto ao passar o mouse */
   }
 
   footer {
@@ -109,7 +110,7 @@
     padding: 20px; /* Espaçamento interno */
     text-align: center; /* Centraliza texto */
     font-size: 0.9rem; /* Tamanho do texto */
-    color: #6a7d7c; /* Cor do texto */
+    color: #c6c9c9; /* Cor do texto */
   }
   
   .logo-footer {
