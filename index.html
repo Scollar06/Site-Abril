@@ -1,36 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> <!-- Importa a fonte "Press Start 2P" do Google Fonts -->
-    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta o layout para funcionar bem em dispositivos móveis -->
-    <title>Mine Run</title> <!-- Define o título da aba do navegador -->
-    <link rel="stylesheet" href="style.css"> <!-- Importa o arquivo de estilos CSS externo -->
-    <link href="minecraft-icon.png" rel="shortcut icon"> <!-- Define o ícone da aba (favicon) -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mine Run</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="minecraft-icon.png" rel="shortcut icon">
 </head>
 <body>
-    <nav> <!-- Início da barra de navegação -->
-        <div class="logo"> <!-- Div para conter o logo -->
-          <img src="./imagens/logo-minerun.png" alt="Logo Minecraft"> <!-- Imagem do logo do Minecraft -->
+    <nav>
+        <div class="logo">
+          <img src="./imagens/logo-minerun.png" alt="Logo Minecraft">
         </div>
-        <ul class="menu-centralizado"> <!-- Lista de links centralizados -->
-          <li><a href="#home">Home</a></li> <!-- Link para a seção "home" -->
-          <li><a href="#sobre">Sobre</a></li> <!-- Link para a seção "sobre" -->
-          <li><a href="#galeria">Galeria</a></li> <!-- Link para a seção "galeria" -->
-          <li><a href="#contato">Contato</a></li> <!-- Link para a seção "contato" -->
-          <li><a href="#jogar" class="btn-jogar">Jogar</a></li> <!-- Link para a seção "jogar" com estilo de botão -->
+        <ul class="menu-centralizado">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li><a href="#jogar" class="btn-jogar">Jogar</a></li>
         </ul>
-      </nav>
-      <div class="overlay"> <!-- Div principal para conteúdo com efeito visual (como fundo escuro/transparente) -->
+    </nav>
 
-        <section id="home" class="secao"> <!-- Seção inicial do site -->
-          <img src="imagens/alex e creeper.jpg" alt="Minecraft topo" class="imagem-topo"> <!-- Imagem de destaque no topo da seção -->
+    <div class="overlay">
+        <section id="home" class="secao">
+          <img src="imagens/alex e creeper.jpg" alt="Minecraft topo" class="imagem-topo">
           <p>Agora, preso em duas dimensões, Steve corre contra o tempo para salvar Alex... e restaurar o mundo como ele era! 
-            Bem-vindo ao Mine Run.</p> <!-- Texto de introdução ao jogo -->
+            Bem-vindo ao Mine Run.</p>
         </section>
-    
-        <section id="sobre" class="secao"> <!-- Seção sobre o jogo -->
-          <h2>Sobre o Jogo</h2> <!-- Título da seção -->
+
+        <section id="sobre" class="secao">
+          <h2>Sobre o Jogo</h2>
           <p>
             O mundo era vasto, profundo, tridimensional. Steve e Alex — parceiros inseparáveis — protegiam a ordem natural do universo dos blocos.
           </p>
@@ -45,77 +45,74 @@
           </p>
           <p><em>"Dois construtores. Um mundo quebrado. Um único caminho: em frente."</em></p>
         </section>
-    
-        <section id="galeria" class="secao"> <!-- Seção de galeria de imagens -->
-          <h2>Galeria</h2> <!-- Título da seção -->
-          <div class="galeria"> <!-- Container para imagens da galeria -->
-            <img src="imagens/print1.png" alt="Print Minecraft 1"> <!-- Imagem 1 -->
-            <img src="imagens/print2.png" alt="Print Minecraft 2"> <!-- Imagem 2 -->
-            <img src="imagens/print3.png" alt="Print Minecraft 3"> <!-- Imagem 3 -->
-            <img src="imagens/print4.png" alt="Print Minecraft 4"> <!-- Imagem 4 -->
+
+        <section id="galeria" class="secao">
+          <h2>Galeria</h2>
+          <div class="galeria">
+            <img src="imagens/print1.png" alt="Print Minecraft 1">
+            <img src="imagens/print2.png" alt="Print Minecraft 2">
+            <img src="imagens/print3.png" alt="Print Minecraft 3">
+            <img src="imagens/print4.png" alt="Print Minecraft 4">
           </div>
         </section>
-    
-        <section id="contato" class="secao"> <!-- Seção de contato -->
-          <div class="icone-bmo"> <!-- Container para o ícone do Minecraft -->
-            <img src="imagens/bloco mesclado.png" alt="Ícone Minecraft"> <!-- Ícone decorativo -->
+
+        <section id="contato" class="secao">
+          <div class="icone-bmo">
+            <img src="imagens/bloco mesclado.png" alt="Ícone Minecraft">
           </div>
-          <form id="form-contato" class="form-contato"> <!-- Formulário de contato -->
-            <h2>Quer dar sugestões ou feedback?</h2> <!-- Título do formulário -->
-    
-            <label for="nome">Nome</label> <!-- Rótulo do campo de nome -->
-            <input type="text" id="nome" name="nome" placeholder="Diga seu nome" required> <!-- Campo de texto para nome -->
-    
-            <label for="email">Email</label> <!-- Rótulo do campo de e-mail -->
-            <input type="email" id="email" name="email" placeholder="Diga seu email" required> <!-- Campo de e-mail -->
-    
-            <label for="mensagem">Mensagem</label> <!-- Rótulo do campo de mensagem -->
-            <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" rows="5" required></textarea> <!-- Área de texto para a mensagem -->
-    
-            <button type="submit">Enviar Mensagem</button> <!-- Botão para enviar o formulário -->
+          <form id="form-contato" class="form-contato">
+            <h2>Quer dar sugestões ou feedback?</h2>
+
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Diga seu nome" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Diga seu email" required>
+
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" rows="5" required></textarea>
+
+            <button type="submit">Enviar Mensagem</button>
           </form>
-    
+
           <div id="mensagem-sucesso" style="display: none; color: #00ffae; text-align: center; margin-top: 20px;">
-            ✅ A mensagem foi enviada com sucesso! <!-- Mensagem exibida após envio bem-sucedido -->
+            ✅ A mensagem foi enviada com sucesso!
           </div>
         </section>
-    
-        <section id="jogar" class="secao"> <!-- Seção "jogar" do site -->
-          <h2>Jogar</h2> <!-- Título da seção -->
-          <p>Preparado para correr pela sua vida? Não? Eu espero que sim! [...]</p> <!-- Chamada para ação -->
-          <a href="#" class="btn-jogar-grande">Play</a> <!-- Botão/link para iniciar o jogo -->
-        </section>
-    
-        <footer> <!-- Rodapé do site -->
-          <img src="imagens/logo-minerun.png" alt="Logo" class="logo-footer"> <!-- Ícone no rodapé -->
-          <p>Criado por Gabriel Scolar</p> <!-- Créditos do criador -->
+
+        <section id="jogar" class="secao">
+          <h2>Jogar</h2>
+          <p>Preparado para correr pela sua vida? Não? Eu espero que sim!</p>
+
+          <!-- Botão para abrir o jogo em nova aba -->
+          <a href="jogo/index.html" target="_blank" class="btn-jogar-grande" style="display: inline-block; padding: 12px 20px; background-color: #5cc491; color: #fff; border-radius: 10px; font-family: 'Press Start 2P'; text-decoration: none; margin-bottom: 20px;">▶ De um click para Jogar</a>
+          
+          
+
+        <footer>
+          <img src="imagens/logo-minerun.png" alt="Logo" class="logo-footer">
+          <p>Criado por Gabriel Scolar</p>
         </footer>
-    
-      </div>
-      <script>
-        // Seleciona todos os links do menu de navegação
-        const botoesMenu = document.querySelectorAll("nav a");
-    
-        // Seleciona todas as seções com a classe "secao"
-        const secoes = document.querySelectorAll(".secao");
-    
-        // Para cada botão do menu, adiciona um ouvinte de clique
-        botoesMenu.forEach(botao => {
-          botao.addEventListener("click", (e) => {
-            e.preventDefault(); // Impede o comportamento padrão do link (navegar para a âncora)
-            const alvo = botao.getAttribute("href").replace("#", ""); // Obtém o ID da seção de destino
-    
-            if (alvo === "home") {
-              // Se for "home", exibe todas as seções
-              secoes.forEach(secao => secao.style.display = "block");
-            } else {
-              // Caso contrário, mostra apenas a seção clicada e oculta as outras
-              secoes.forEach(secao => {
-                secao.style.display = secao.id === alvo ? "block" : "none";
-              });
-            }
-          });
+    </div>
+
+    <script>
+      const botoesMenu = document.querySelectorAll("nav a");
+      const secoes = document.querySelectorAll(".secao");
+
+      botoesMenu.forEach(botao => {
+        botao.addEventListener("click", (e) => {
+          e.preventDefault();
+          const alvo = botao.getAttribute("href").replace("#", "");
+
+          if (alvo === "home") {
+            secoes.forEach(secao => secao.style.display = "block");
+          } else {
+            secoes.forEach(secao => {
+              secao.style.display = secao.id === alvo ? "block" : "none";
+            });
+          }
         });
-      </script>
+      });
+    </script>
 </body>
 </html>
