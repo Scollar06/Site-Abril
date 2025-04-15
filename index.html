@@ -76,9 +76,8 @@
             <button type="submit">Enviar Mensagem</button>
           </form>
 
-          <div id="mensagem-sucesso" style="display: none; color: #00ffae; text-align: center; margin-top: 20px;">
-            ✅ A mensagem foi enviada com sucesso!
-          </div>
+          <div id="mensagem-sucesso" style="display: none; color: #00ffae; text-align: center; margin-top: 20px; font-size: 1.3rem;">
+            ✅ Mensagem enviada com sucesso!
         </section>
 
         <section id="jogar" class="secao">
@@ -111,6 +110,31 @@
             secoes.forEach(secao => {
               secao.style.display = secao.id === alvo ? "block" : "none";
             });
+          }
+        });
+      });
+    </script>
+    <script>
+      const form = document.getElementById('form-contato');
+      const mensagem = document.getElementById('mensagem-sucesso');
+    
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+    
+        const dados = new FormData(form);
+    
+        fetch('https://formspree.io/f/mvgkdzzw', {
+          method: 'POST',
+          body: dados,
+          headers: {
+            'Accept': 'application/json'
+          }
+        }).then(response => {
+          if (response.ok) {
+            form.reset();
+            mensagem.style.display = 'block';
+          } else {
+            alert("Erro ao enviar mensagem. Tente novamente.");
           }
         });
       });
