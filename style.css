@@ -1,241 +1,268 @@
+/* Reset básico de estilos para todos os elementos */
 * {
-  margin: 0; /* Remove a margem padrão de todos os elementos */
-  padding: 0; /* Remove o preenchimento interno padrão */
-  box-sizing: border-box; /* Inclui bordas e padding no cálculo do tamanho total dos elementos */
+  margin: 0; /* Remove a margem padrão */
+  padding: 0; /* Remove o padding padrão */
+  box-sizing: border-box; /* Faz com que padding e borda sejam incluídos nas dimensões do elemento */
 }
 
+/* Estilo global do corpo da página */
 body {
-  font-family: 'Press Start 2P', monospace; /* Define a fonte principal como Press Start 2P */
-  font-size: 20px; /* Define o tamanho padrão da fonte */
-  background-image: url('imagens/fundo.webp'); /* Define imagem de fundo */
-  background-size: cover; /* Faz a imagem cobrir toda a tela */
-  background-position: center; /* Centraliza a imagem de fundo */
-  background-repeat: no-repeat; /* Evita repetição da imagem */
-  background-attachment: fixed; /* Faz o fundo permanecer fixo ao rolar a página */
-  color: #000000; /* Define a cor padrão do texto */
+  font-family: 'Press Start 2P', monospace; /* Define a fonte principal */
+  font-size: 20px; /* Tamanho padrão da fonte */
+  background-image: url('imagens/fundo.webp'); /* Imagem de fundo */
+  background-size: cover; /* Cobre todo o fundo */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Não repete a imagem */
+  background-attachment: fixed; /* Fundo fixo ao rolar */
+  color: #000000; /* Cor do texto */
 }
 
+/* Camada sobre o fundo com transparência */
 .overlay {
   background-color: rgba(255, 255, 255, 0.6); /* Fundo branco translúcido */
-  min-height: 100vh; /* Garante altura mínima igual à altura da tela */
-  padding: 0; /* Remove padding interno */
+  min-height: 100vh; /* Altura mínima igual à tela inteira */
+  padding: 0;
 }
 
+/* Menu de navegação */
 nav {
-  display: flex; /* Usa flexbox para alinhar os elementos do menu */
-  align-items: center; /* Alinha os itens verticalmente ao centro */
-  justify-content: center; /* Centraliza os itens horizontalmente */
-  padding: 10px; /* Espaçamento interno */
-  background-color: #5c5e5d; /* Cor de fundo do menu */
+  display: flex; /* Layout em linha */
+  align-items: center; /* Alinha verticalmente */
+  justify-content: center; /* Centraliza o conteúdo */
+  padding: 10px;
+  background-color: #5c5e5d; /* Cor do menu */
 }
 
+/* Lista de links centralizados */
 .menu-centralizado {
-  list-style: none; /* Remove os marcadores da lista */
-  display: flex; /* Alinha os itens lado a lado */
-  gap: 70px; /* Espaçamento entre os itens */
+  list-style: none; /* Remove marcadores */
+  display: flex; /* Alinha lado a lado */
+  gap: 70px; /* Espaço entre os itens */
 }
 
+/* Estilo dos links do menu */
 .menu-centralizado li a {
-  color: #35524a; /* Cor do texto dos links */
-  text-decoration: none; /* Remove o sublinhado dos links */
-  font-weight: bold; /* Deixa o texto em negrito */
-  background-color: #e5f4ea; /* Cor de fundo dos links */
-  padding: 8px 15px; /* Espaçamento interno */
-  border-radius: 5px; /* Cantos arredondados */
-  transition: background 0.3s; /* Suaviza a transição da cor de fundo */
+  color: #35524a;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #e5f4ea;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background 0.3s;
 }
 
+/* Hover e destaque do botão Jogar */
 .menu-centralizado li a:hover,
 .menu-centralizado li a.btn-jogar {
-background-color: #b5d3c5; /* Altera a cor de fundo ao passar o mouse ou se for o botão "jogar" */
+  background-color: #b5d3c5;
 }
 
+/* Logo no menu */
 .logo img {
-height: 80px; /* Define altura do logo */
+  height: 80px;
 }
 
+/* Seções principais da página */
 .secao {
-padding: 60px 20px; /* Espaçamento interno da seção */
-text-align: center; /* Centraliza o conteúdo */
-max-width: 900px; /* Largura máxima */
-margin: 0 auto; /* Centraliza a seção na tela */
+  padding: 60px 20px;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
+/* Títulos das seções */
 .secao h2 {
-margin-bottom: 20px; /* Espaço inferior do título */
-font-size: 2rem; /* Tamanho da fonte */
-color: #c2510f; /* Cor do título */
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #c2510f;
 }
 
+/* Galeria de imagens */
 .galeria {
-  display: flex; /* Flexbox para alinhar imagens */
-  flex-wrap: wrap; /* Permite quebra de linha */
-  justify-content: center; /* Centraliza as imagens */
-  gap: 20px; /* Espaçamento entre imagens */
-  margin-top: 15px; /* Espaço acima da galeria */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 15px;
 }
 
+/* Imagens da galeria */
 .galeria img {
-  width: 300px; /* Largura fixa das imagens */
-  height: auto; /* Altura proporcional */
-  border-radius: 8px; /* Cantos arredondados */
-  border: 3px solid #d3ebe2; /* Borda das imagens */
-  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra suave */
-  transition: transform 0.3s ease; /* Animação suave ao ampliar */
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+  border: 3px solid #d3ebe2;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
 }
 
+/* Animação ao passar o mouse na imagem */
 .galeria img:hover {
-  transform: scale(1.05); /* Aumenta a imagem ao passar o mouse */
+  transform: scale(1.05);
 }
 
+/* Botão para jogar */
 .btn-jogar-grande {
-  display: inline-block; /* Permite definir largura e altura */
-  margin-top: 20px; /* Espaço acima do botão */
-  background-color: #c0ded9; /* Cor de fundo */
-  color: #35524a; /* Cor do texto */
-  padding: 15px 30px; /* Espaçamento interno */
-  font-size: 1rem; /* Tamanho da fonte */
-  text-decoration: none; /* Remove sublinhado */
-  border-radius: 10px; /* Cantos arredondados */
-  transition: background 0.3s; /* Suaviza a transição de cor */
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #c0ded9;
+  color: #35524a;
+  padding: 15px 30px;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background 0.3s;
 }
 
+/* Hover do botão jogar */
 .btn-jogar-grande:hover {
-  background-color: #252c2a; /* Cor ao passar o mouse */
-  color: #a8cfc6; /* Cor do texto ao passar o mouse */
+  background-color: #252c2a;
+  color: #a8cfc6;
 }
 
+/* Rodapé */
 footer {
-  background-color: #5c5e5d; /* Cor de fundo do rodapé */
-  padding: 20px; /* Espaçamento interno */
-  text-align: center; /* Centraliza texto */
-  font-size: 0.9rem; /* Tamanho do texto */
-  color: #c6c9c9; /* Cor do texto */
+  background-color: #5c5e5d;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #c6c9c9;
 }
 
+/* Logo no rodapé */
 .logo-footer {
-  height: 60px; /* Altura do ícone no rodapé */
+  height: 60px;
 }
 
+/* Imagem do topo da página */
 .imagem-topo {
-  width: 100%; /* Largura total */
-  max-width: 700px; /* Largura máxima */
-  height: auto; /* Altura proporcional */
-  display: block; /* Faz a imagem ocupar uma linha inteira */
-  margin: 20px auto; /* Centraliza e espaça a imagem */
-  border: 4px solid #d3ebe2; /* Borda */
-  border-radius: 10px; /* Cantos arredondados */
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border: 4px solid #d3ebe2;
+  border-radius: 10px;
 }
 
+/* Formulário de contato */
 .form-contato {
-  max-width: 600px; /* Largura máxima */
-  margin: 30px auto; /* Centraliza o formulário */
-  background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com transparência */
-  padding: 30px; /* Espaçamento interno */
-  border-radius: 15px; /* Cantos arredondados */
-  box-shadow: 0 0 15px rgba(0,0,0,0.1); /* Sombra suave */
-  color: #4a4a4a; /* Cor do texto */
+  max-width: 600px;
+  margin: 30px auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  color: #4a4a4a;
 }
 
+/* Título do formulário */
 .form-contato h2 {
-  text-align: center; /* Centraliza o título */
-  margin-bottom: 20px; /* Espaço inferior */
-  font-size: 1.2rem; /* Tamanho do título */
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
 }
 
+/* Rótulos do formulário */
 .form-contato label {
-  color: #4a4a4a; /* Cor do texto */
-  font-weight: bold; /* Negrito */
-  display: block; /* Ocupa linha inteira */
-  margin-top: 10px; /* Espaço acima */
+  color: #4a4a4a;
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
 }
 
+/* Inputs e textarea do formulário */
 .form-contato input,
 .form-contato textarea {
-  width: 100%; /* Largura total */
-  padding: 12px; /* Espaçamento interno */
-  margin-bottom: 15px; /* Espaço inferior */
-  border: 1px solid #c8e3da; /* Borda */
-  border-radius: 10px; /* Cantos arredondados */
-  background-color: #f9fdfb; /* Cor de fundo */
-  color: #4a4a4a; /* Cor do texto */
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #c8e3da;
+  border-radius: 10px;
+  background-color: #f9fdfb;
+  color: #4a4a4a;
 }
 
+/* Placeholder dos inputs */
 .form-contato input::placeholder,
 .form-contato textarea::placeholder {
-  color: #a1a1a1; /* Cor do placeholder */
-  font-style: italic; /* Texto em itálico */
+  color: #a1a1a1;
+  font-style: italic;
 }
 
+/* Botão de envio do formulário */
 .form-contato button {
-  background-color: #c0ded9; /* Cor de fundo do botão */
-  color: #35524a; /* Cor do texto */
-  border: none; /* Sem borda */
-  padding: 12px 25px; /* Espaçamento interno */
-  border-radius: 10px; /* Cantos arredondados */
-  font-size: 16px; /* Tamanho do texto */
-  cursor: pointer; /* Cursor de clique */
-  transition: background-color 0.3s ease; /* Transição suave */
-  display: block; /* Ocupa linha inteira */
-  margin: 0 auto; /* Centraliza o botão */
+  background-color: #c0ded9;
+  color: #35524a;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 0 auto;
 }
 
+/* Hover no botão de envio */
 .form-contato button:hover {
-  background-color: #a8cfc6; /* Cor ao passar o mouse */
+  background-color: #a8cfc6;
 }
 
+/* Ícone acima do formulário */
 .icone-bmo img {
-  width: 90px; /* Largura da imagem */
-  height: auto; /* Altura proporcional */
-  border-radius: 10px; /* Cantos arredondados */
-  box-shadow: 0 0 10px rgba(173, 216, 190, 0.6); /* Sombra verde suave */
+  width: 90px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(173, 216, 190, 0.6);
 }
 
-@media (max-width: 768px) { /* Estilos para telas menores que 768px */
+/* Estilos responsivos para telas menores que 768px */
+@media (max-width: 768px) {
   nav {
-    flex-direction: column; /* Empilha os elementos verticalmente */
-    align-items: center; /* Centraliza os itens */
-    padding: 10px; /* Reduz padding */
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
   }
 
   nav ul {
-    flex-direction: column; /* Empilha os links */
-    align-items: center; /* Centraliza os links */
-    gap: 15px; /* Espaço entre os links */
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
   }
 
   .secao {
-    padding: 30px 15px; /* Reduz padding das seções */
+    padding: 30px 15px;
   }
 
   h1, h2 {
-    font-size: 1.5rem; /* Reduz tamanho dos títulos */
+    font-size: 1.5rem;
   }
 
   .galeria {
-    flex-direction: column; /* Empilha as imagens verticalmente */
-    align-items: center; /* Centraliza as imagens */
+    flex-direction: column;
+    align-items: center;
   }
 
   .galeria img {
-    width: 90%; /* Imagens mais adaptáveis */
+    width: 90%;
   }
 
   .form-contato {
-    width: 95%; /* Formulário mais estreito */
-    padding: 20px; /* Menor padding interno */
+    width: 95%;
+    padding: 20px;
   }
 
   .btn-jogar-grande {
-    width: 100%; /* Botão ocupa largura total */
-    text-align: center; /* Texto centralizado */
+    width: 100%;
+    text-align: center;
   }
 
   .imagem-topo {
-    width: 90%; /* Imagem topo mais responsiva */
+    width: 90%;
   }
 
   footer {
-    font-size: 0.8rem; /* Tamanho menor no rodapé */
+    font-size: 0.8rem;
   }
 }
