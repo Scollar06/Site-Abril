@@ -1,118 +1,147 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- Importa a fonte estilo 8-bit para o jogo -->
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+    <!-- Define a codificação e responsividade -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Título da página e ícone -->
     <title>Mine Run</title>
     <link rel="stylesheet" href="style.css">
     <link href="minecraft-icon.png" rel="shortcut icon">
 </head>
 <body>
+    <!-- Navegação principal do site -->
     <nav>
         <div class="logo">
-          <img src="./imagens/logo-minerun.png" alt="Logo Minecraft">
+            <img src="./imagens/logo-minerun.png" alt="Logo Minecraft">
         </div>
         <ul class="menu-centralizado">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#galeria">Galeria</a></li>
-          <li><a href="#contato">Contato</a></li>
-          <li><a href="#jogar" class="btn-jogar">Jogar</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="#jogar" class="btn-jogar">Jogar</a></li>
         </ul>
     </nav>
 
+    <!-- Conteúdo principal envolvido por uma overlay -->
     <div class="overlay">
+        <!-- Seção inicial -->
         <section id="home" class="secao">
-          <img src="imagens/alex e creeper.jpg" alt="Minecraft topo" class="imagem-topo">
-          <p>Agora, preso em duas dimensões, Steve corre contra o tempo para salvar Alex... e restaurar o mundo como ele era! 
-            Bem-vindo ao Mine Run.</p>
+            <img src="imagens/alex e creeper.jpg" alt="Minecraft topo" class="imagem-topo">
+            <p>
+                Agora, preso em duas dimensões, Steve corre contra o tempo para salvar Alex... e restaurar o mundo como ele era! 
+                Bem-vindo ao Mine Run.
+            </p>
         </section>
 
+        <!-- Seção sobre a história do jogo -->
         <section id="sobre" class="secao">
-          <h2>Sobre o Jogo</h2>
-          <p>
-            O mundo era vasto, profundo, tridimensional. Steve e Alex — parceiros inseparáveis — protegiam a ordem natural do universo dos blocos.
-          </p>
-          <p>
-            Mas tudo mudou quando um portal misterioso foi aberto nas profundezas da Mina Central. Dele surgiu <strong>Null</strong>, uma entidade corrompida, esquecida nas linhas mais antigas do Código Base.
-          </p>
-          <p>
-            No momento da ruptura, Alex foi sugada pelo portal, e o mundo, antes 3D, colapsou em apenas duas dimensões. Agora, Steve está preso em um plano achatado, onde as leis da física foram reescritas e cada plataforma é um risco.
-          </p>
-          <p>
-            Em <strong>Mine Run</strong>, você assume o controle de Steve em uma jornada épica por mundos pixelados e instáveis. Pule entre blocos suspensos, enfrente criaturas distorcidas e corra contra o tempo para salvar Alex — e restaurar o mundo como ele era.
-          </p>
-          <p><em>"Dois construtores. Um mundo quebrado. Um único caminho: em frente."</em></p>
+            <h2>Sobre o Jogo</h2>
+            <p>O mundo era vasto, profundo, tridimensional. Steve e Alex — parceiros inseparáveis — protegiam a ordem natural do universo dos blocos.</p>
+            <p>Mas tudo mudou quando um portal misterioso foi aberto nas profundezas da Mina Central...</p>
+            <p>No momento da ruptura, Alex foi sugada pelo portal, e o mundo colapsou em apenas duas dimensões...</p>
+            <p>Em <strong>Mine Run</strong>, você assume o controle de Steve em uma jornada épica por mundos pixelados...</p>
+            <p><em>"Dois construtores. Um mundo quebrado. Um único caminho: em frente."</em></p>
         </section>
 
+        <!-- Seção da galeria de imagens com carrossel -->
         <section id="galeria" class="secao">
-          <h2>Galeria</h2>
-          <div class="galeria">
-            <img src="imagens/print1.png" alt="Print Minecraft 1">
-            <img src="imagens/print2.png" alt="Print Minecraft 2">
-            <img src="imagens/print3.png" alt="Print Minecraft 3">
-            <img src="imagens/print4.png" alt="Print Minecraft 4">
-          </div>
+            <h2>Galeria</h2>
+            <div class="galeria" id="galeria">
+                <!-- Apenas uma imagem é visível por vez no carrossel -->
+                <img src="imagens/print1.png" alt="Print Minecraft 1" class="slide" style="display: block;">
+                <img src="imagens/print2.png" alt="Print Minecraft 2" class="slide" style="display: none;">
+                <img src="imagens/print3.png" alt="Print Minecraft 3" class="slide" style="display: none;">
+                <img src="imagens/print4.png" alt="Print Minecraft 4" class="slide" style="display: none;">
+            </div>
         </section>
 
+        <!-- Seção de contato com formulário -->
         <section id="contato" class="secao">
-          <div class="icone-bmo">
-            <img src="imagens/bloco mesclado.png" alt="Ícone Minecraft">
-          </div>
-          <form id="form-contato" class="form-contato">
-            <h2>Quer dar sugestões ou feedback?</h2>
+            <div class="icone-bmo">
+                <img src="imagens/bloco mesclado.png" alt="Ícone Minecraft">
+            </div>
+            <form id="form-contato" class="form-contato">
+                <h2>Quer dar sugestões ou feedback?</h2>
 
-            <label for="nome">Nome</label>
-            <input type="text" id="nome" name="nome" placeholder="Diga seu nome" required>
+                <!-- Campos do formulário -->
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Diga seu nome" required>
 
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Diga seu email" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Diga seu email" required>
 
-            <label for="mensagem">Mensagem</label>
-            <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" rows="5" required></textarea>
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" rows="5" required></textarea>
 
-            <button type="submit">Enviar Mensagem</button>
-          </form>
+                <button type="submit">Enviar Mensagem</button>
+            </form>
 
-          <div id="mensagem-sucesso" style="display: none; color: #00ffae; text-align: center; margin-top: 20px;">
-            ✅ A mensagem foi enviada com sucesso!
-          </div>
+            <!-- Mensagem de sucesso oculta -->
+            <div id="mensagem-sucesso" style="display: none; color: #00ffae; text-align: center; margin-top: 20px;">
+                ✅ A mensagem foi enviada com sucesso!
+            </div>
         </section>
 
+        <!-- Seção com botão para jogar -->
         <section id="jogar" class="secao">
-          <h2>Jogar</h2>
-          <p>Preparado para correr pela sua vida? Não? Eu espero que sim!</p>
+            <h2>Jogar</h2>
+            <p>Preparado para correr pela sua vida? Não? Eu espero que sim!</p>
 
-          <!-- Botão para abrir o jogo em nova aba -->
-          <a href="jogo/index.html" target="_blank" class="btn-jogar-grande" style="display: inline-block; padding: 12px 20px; background-color: #5cc491; color: #fff; border-radius: 10px; font-family: 'Press Start 2P'; text-decoration: none; margin-bottom: 20px;">▶ De um click para Jogar</a>
-          
-          
+            <!-- Botão que abre o jogo em nova aba -->
+            <a href="jogo/index.html" target="_blank" class="btn-jogar-grande" style="display: inline-block; padding: 12px 20px; background-color: #5cc491; color: #fff; border-radius: 10px; font-family: 'Press Start 2P'; text-decoration: none; margin-bottom: 20px;">▶ De um click para Jogar</a>
+        </section>
 
+        <!-- Rodapé com logo e créditos -->
         <footer>
-          <img src="imagens/logo-minerun.png" alt="Logo" class="logo-footer">
-          <p>Criado por Gabriel Scolar</p>
+            <img src="imagens/logo-minerun.png" alt="Logo" class="logo-footer">
+            <p>Criado por Gabriel Scolar</p>
         </footer>
     </div>
 
+    <!-- Script para alternar entre as seções da página -->
     <script>
-      const botoesMenu = document.querySelectorAll("nav a");
-      const secoes = document.querySelectorAll(".secao");
+        const botoesMenu = document.querySelectorAll("nav a");
+        const secoes = document.querySelectorAll(".secao");
 
-      botoesMenu.forEach(botao => {
-        botao.addEventListener("click", (e) => {
-          e.preventDefault();
-          const alvo = botao.getAttribute("href").replace("#", "");
+        // Alterna a visibilidade das seções quando um botão do menu é clicado
+        botoesMenu.forEach(botao => {
+            botao.addEventListener("click", (e) => {
+                e.preventDefault();
+                const alvo = botao.getAttribute("href").replace("#", "");
 
-          if (alvo === "home") {
-            secoes.forEach(secao => secao.style.display = "block");
-          } else {
-            secoes.forEach(secao => {
-              secao.style.display = secao.id === alvo ? "block" : "none";
+                if (alvo === "home") {
+                    secoes.forEach(secao => secao.style.display = "block");
+                } else {
+                    secoes.forEach(secao => {
+                        secao.style.display = secao.id === alvo ? "block" : "none";
+                    });
+                }
             });
-          }
         });
-      });
+
+        // Script para o carrossel automático da galeria
+        const slides = document.querySelectorAll(".galeria .slide");
+        let slideIndex = 0;
+
+        function mostrarProximoSlide() {
+            // Esconde todas as imagens
+            slides.forEach(slide => slide.style.display = "none");
+
+            // Atualiza o índice para mostrar a próxima imagem
+            slideIndex = (slideIndex + 1) % slides.length;
+
+            // Exibe a imagem atual
+            slides[slideIndex].style.display = "block";
+        }
+
+        // Troca de imagem a cada 3 segundos (3000ms)
+        setInterval(mostrarProximoSlide, 3000);
     </script>
 </body>
 </html>
