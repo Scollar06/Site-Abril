@@ -19,7 +19,7 @@ body {
 
 /* Camada sobre o fundo com transparência */
 .overlay {
-  background-color: rgba(255, 255, 255, 0.6); /* Fundo branco translúcido */
+  background-color: rgba(191, 190, 196, 0.6); /* Fundo branco translúcido */
   min-height: 100vh; /* Altura mínima igual à tela inteira */
   padding: 0;
 }
