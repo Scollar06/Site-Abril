@@ -1,51 +1,60 @@
-<!DOCTYPE html> <!-- Define que o documento é HTML5 -->
-<html lang="pt-br"> <!-- Define o idioma da página como português do Brasil -->
+<!DOCTYPE html>
+<!-- Define o tipo de documento como HTML5 -->
+<html lang="pt-br">
+<!-- Define o idioma principal da página como português do Brasil -->
 
 <head>
-    <!-- Importa uma fonte estilo retrô do Google Fonts -->
+    <!-- Importa uma fonte pixelada do Google Fonts, usada para estética retrô/games -->
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    
-    <meta charset="UTF-8"> <!-- Define a codificação de caracteres -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Torna o site responsivo -->
-    <title>Mine Run</title> <!-- Título da aba do navegador -->
-    
-    <!-- Ícone da aba do navegador -->
-    <link href="imagens/icons8-minecraft-48.png" rel="shortcut icon">
+
+    <!-- Define a codificação de caracteres para UTF-8 -->
+    <meta charset="UTF-8">
+
+    <!-- Garante que a página se adapte bem a dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título da aba do navegador -->
+    <title>Mine Run</title>
+
+    <!-- Link (sem função prática aqui) para uma imagem, mas está faltando "rel" -->
+    <link href="imagens/bloco mesclado.png">
 
     <!-- Importa o arquivo CSS externo -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Ícone da aba do navegador (favicon) -->
+    <link href="imagens/icons8-minecraft-48.png" rel="shortcut icon">
 </head>
 
 <body>
-    <!-- Início do menu de navegação -->
+    <!-- Início do menu de navegação superior -->
     <nav>
-        <div class="logo"> <!-- Logo da marca -->
-            <img src="./imagens/logo-minerun.png" alt="Logo Minecraft"> <!-- Imagem da logo -->
+        <div class="logo">
+            <!-- Logo do site -->
+            <img src="./imagens/logo-minerun.png" alt="Logo Minecraft">
         </div>
-
-        <!-- Botão que aparece apenas em telas pequenas para abrir/fechar o menu -->
-        <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button> <!-- Ícone de "menu hamburguer" -->
 
         <!-- Lista de links de navegação -->
         <ul class="menu-centralizado">
-            <li><a href="#home">Home</a></li> <!-- Link para seção Home -->
-            <li><a href="#sobre">Sobre</a></li> <!-- Link para seção Sobre -->
-            <li><a href="#galeria">Galeria</a></li> <!-- Link para seção Galeria -->
-            <li><a href="#contato">Contato</a></li> <!-- Link para seção Contato -->
-            <li><a href="#jogar" class="btn-jogar">Jogar</a></li> <!-- Link estilizado para Jogar -->
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="#jogar" class="btn-jogar">Jogar</a></li>
         </ul>
     </nav>
 
-    <!-- Fundo escurecido com conteúdo sobreposto -->
+    <!-- Container geral com fundo/efeito de overlay -->
     <div class="overlay">
 
         <!-- Seção inicial com imagem e introdução -->
         <section id="home" class="secao">
-            <img src="imagens/alex e creeper.jpg" alt="Minecraft topo" class="imagem-topo"> <!-- Imagem principal -->
-            <p>Agora, preso em duas dimensões... Bem-vindo ao Mine Run.</p> <!-- Texto introdutório -->
+            <img src="imagens/alex e creeper.jpg" alt="Minecraft topo" class="imagem-topo">
+            <p>Agora, preso em duas dimensões, Steve corre contra o tempo para salvar Alex... e restaurar o mundo como ele era! 
+                Bem-vindo ao Mine Run.</p>
         </section>
 
-        <!-- Seção sobre a história do jogo -->
+        <!-- Seção de história/sinopse do jogo -->
         <section id="sobre" class="secao">
             <h2>Sobre o Jogo</h2>
             <p>O mundo era vasto, profundo, tridimensional...</p>
@@ -55,10 +64,10 @@
             <p><em>"Dois construtores. Um mundo quebrado. Um único caminho: em frente."</em></p>
         </section>
 
-        <!-- Seção com galeria de imagens do jogo -->
+        <!-- Seção de galeria com prints do jogo -->
         <section id="galeria" class="secao">
             <h2>Galeria</h2>
-            <div class="galeria"> <!-- Container das imagens -->
+            <div class="galeria">
                 <img src="imagens/print1.png" alt="Print Minecraft 1">
                 <img src="imagens/print2.png" alt="Print Minecraft 2">
                 <img src="imagens/print3.png" alt="Print Minecraft 3">
@@ -66,43 +75,41 @@
             </div>
         </section>
 
-        <!-- Seção de formulário de contato -->
+        <!-- Seção de formulário para feedback ou sugestões -->
         <section id="contato" class="secao">
-            <div class="icone-bmo"> <!-- Ícone decorativo -->
+            <!-- Ícone decorativo -->
+            <div class="icone-bmo">
                 <img src="imagens/bloco mesclado.png" alt="Ícone Minecraft">
             </div>
 
-            <form id="form-contato" class="form-contato"> <!-- Formulário de feedback -->
+            <!-- Formulário de contato -->
+            <form id="form-contato" class="form-contato">
                 <h2>Quer dar sugestões ou feedback?</h2>
 
-                <!-- Campo de nome -->
                 <label for="nome">Nome</label>
                 <input type="text" id="nome" name="nome" placeholder="Diga seu nome" required>
 
-                <!-- Campo de email -->
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" placeholder="Diga seu email" required>
 
-                <!-- Campo de mensagem -->
                 <label for="mensagem">Mensagem</label>
                 <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" rows="5" required></textarea>
 
-                <!-- Botão de envio -->
                 <button type="submit">Enviar Mensagem</button>
             </form>
 
-            <!-- Mensagem de sucesso oculta inicialmente -->
+            <!-- Mensagem de sucesso que aparece após envio do formulário -->
             <div id="mensagem-sucesso" style="display: none; color: #171818; text-align: center; margin-top: 20px; font-size: 1.3rem;">
                 ✅ Mensagem enviada com sucesso!
             </div>
         </section>
 
-        <!-- Seção com botão para jogar -->
+        <!-- Seção final com botão para abrir o jogo -->
         <section id="jogar" class="secao">
             <h2>Jogar</h2>
             <p>Preparado para correr pela sua vida? Não? Eu espero que sim!</p>
 
-            <!-- Botão que abre o jogo -->
+            <!-- Botão que abre o jogo em nova aba -->
             <a href="jogo/index.html" target="_blank" class="btn-jogar-grande" style="display: inline-block; padding: 12px 20px; background-color: #5cc491; color: #fff; border-radius: 10px; font-family: 'Press Start 2P'; text-decoration: none; margin-bottom: 20px;">
                 ▶ De um click para Jogar
             </a>
@@ -110,56 +117,46 @@
 
         <!-- Rodapé da página -->
         <footer>
-            <img src="imagens/logo-minerun.png" alt="Logo" class="logo-footer"> <!-- Logo no rodapé -->
+            <img src="imagens/logo-minerun.png" alt="Logo" class="logo-footer">
             <p>Criado por Gabriel Scolar</p>
         </footer>
     </div>
 
-    <!-- Script para alternar o menu em telas pequenas -->
-    <script>
-        const toggleBtn = document.querySelector(".menu-toggle"); // Botão do menu
-        const menu = document.querySelector(".menu-centralizado"); // Lista de links
-
-        toggleBtn.addEventListener("click", () => {
-            menu.classList.toggle("ativo"); // Ativa/desativa o menu
-        });
-    </script>
-
-    <!-- Script para navegação entre seções -->
+    <!-- Script para navegação entre seções com comportamento de esconder/mostrar -->
     <script>
         const botoesMenu = document.querySelectorAll("nav a");
         const secoes = document.querySelectorAll(".secao");
 
         botoesMenu.forEach(botao => {
             botao.addEventListener("click", (e) => {
-                e.preventDefault(); // Impede comportamento padrão do link
-                const alvo = botao.getAttribute("href").replace("#", ""); // Pega ID da seção
+                e.preventDefault(); // Impede o comportamento padrão do link
 
+                const alvo = botao.getAttribute("href").replace("#", ""); // Pega o id da seção
+
+                // Se "home" for clicado, mostra todas as seções
                 if (alvo === "home") {
-                    secoes.forEach(secao => secao.style.display = "block"); // Mostra tudo
+                    secoes.forEach(secao => secao.style.display = "block");
                 } else {
+                    // Mostra apenas a seção clicada e esconde as outras
                     secoes.forEach(secao => {
-                        secao.style.display = secao.id === alvo ? "block" : "none"; // Mostra só o clicado
+                        secao.style.display = secao.id === alvo ? "block" : "none";
                     });
                 }
-
-                // Fecha o menu em telas pequenas após clicar
-                menu.classList.remove("ativo");
             });
         });
     </script>
 
-    <!-- Script para envio do formulário usando Formspree -->
+    <!-- Script para enviar o formulário usando Formspree -->
     <script>
         const form = document.getElementById('form-contato');
         const mensagem = document.getElementById('mensagem-sucesso');
 
         form.addEventListener('submit', function (e) {
-            e.preventDefault(); // Impede envio padrão
+            e.preventDefault(); // Impede o envio tradicional do formulário
 
-            const dados = new FormData(form); // Pega os dados do formulário
+            const dados = new FormData(form); // Coleta os dados do formulário
 
-            // Envia os dados via POST para o Formspree
+            // Envia os dados via fetch para o endpoint da Formspree
             fetch('https://formspree.io/f/mqapjrwv', {
                 method: 'POST',
                 body: dados,
@@ -169,7 +166,7 @@
             }).then(response => {
                 if (response.ok) {
                     form.reset(); // Limpa o formulário
-                    mensagem.style.display = 'block'; // Mostra sucesso
+                    mensagem.style.display = 'block'; // Mostra a mensagem de sucesso
                 } else {
                     alert("Erro ao enviar mensagem. Tente novamente.");
                 }
