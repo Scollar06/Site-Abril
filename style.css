@@ -1,196 +1,144 @@
-/* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Fonte base e fundo */
+/* Define a fonte principal e remove margens/paddings padrões */
 body {
   font-family: 'Press Start 2P', cursive;
-  background-color: #f2f2f2;
-  color: #333;
-  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #222;
+  color: #fff;
 }
 
-/* Container principal */
-.overlay {
-  padding: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* Menu de navegação */
+/* Estiliza a barra de navegação */
 nav {
+  background-color: #111;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 20px;
-  background-color: #222;
+  padding: 10px 20px;
 }
 
+/* Estiliza a logo */
 .logo img {
   height: 40px;
 }
 
-.menu-centralizado {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  padding: 0;
-  margin: 10px 0;
+/* Botão hamburguer oculto por padrão */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
 }
 
-.menu-centralizado li a,
-.btn-jogar {
+/* Menu de navegação */
+.menu-centralizado {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+/* Links do menu */
+.menu-centralizado li a {
+  color: white;
   text-decoration: none;
-  color: #fff;
-  padding: 8px 10px;
+  font-size: 12px;
+}
+
+/* Botão "Jogar" do menu */
+.btn-jogar {
   background-color: #5cc491;
+  padding: 8px;
   border-radius: 5px;
-  font-size: 0.6rem;
-  white-space: nowrap;
+}
+
+/* Container principal de fundo */
+.overlay {
+  padding: 20px;
 }
 
 /* Seções */
 .secao {
-  padding: 30px 15px;
+  margin-bottom: 60px;
   text-align: center;
 }
 
 /* Imagem do topo */
 .imagem-topo {
-  max-width: 100%;
+  width: 100%;
+  max-width: 500px;
   height: auto;
   border-radius: 10px;
-  margin-bottom: 20px;
 }
 
-/* Galeria */
+/* Galeria de imagens */
 .galeria {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 15px;
-  padding: 10px;
+  margin-top: 20px;
 }
 
-.galeria img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
-/* Ícone decorativo */
-.icone-bmo img {
-  width: 60px;
-  height: auto;
-  margin-bottom: 15px;
-}
-
-/* Formulário de contato */
+/* Formulário */
 .form-contato {
-  max-width: 600px;
-  margin: 0 auto;
+  max-width: 500px;
+  margin: auto;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  text-align: left;
 }
 
-.form-contato h2 {
-  font-size: 1rem;
-  text-align: center;
-}
-
-.form-contato label {
-  font-size: 0.7rem;
-}
-
-.form-contato input,
-.form-contato textarea,
-.form-contato button {
+/* Inputs e textarea */
+input, textarea {
   padding: 10px;
-  font-family: 'Press Start 2P', cursive;
-  font-size: 0.7rem;
-  width: 100%;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: none;
 }
 
-.form-contato button {
+/* Botão enviar */
+button[type="submit"] {
   background-color: #5cc491;
-  color: #fff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
   cursor: pointer;
-}
-
-/* Botão Jogar grande */
-.btn-jogar-grande {
-  display: inline-block;
-  padding: 12px 20px;
-  background-color: #5cc491;
-  color: #fff;
-  border-radius: 10px;
-  font-family: 'Press Start 2P', cursive;
-  text-decoration: none;
-  margin-top: 20px;
-  font-size: 0.7rem;
 }
 
 /* Rodapé */
 footer {
   text-align: center;
-  margin-top: 40px;
   padding: 20px;
-  background-color: #222;
-  color: #fff;
+  background-color: #111;
 }
 
+/* Logo do rodapé */
 .logo-footer {
-  height: 40px;
-  margin-bottom: 10px;
+  height: 30px;
 }
 
-/* Responsivo - até 768px */
+/* Responsividade: a partir de 768px para baixo */
 @media (max-width: 768px) {
-  nav {
-      flex-direction: column;
-      align-items: center;
+  /* Mostra o botão do menu */
+  .menu-toggle {
+      display: block;
   }
 
+  /* Esconde o menu por padrão */
   .menu-centralizado {
+      display: none;
       flex-direction: column;
-      align-items: center;
+      gap: 10px;
+      background-color: #111;
+      position: absolute;
+      top: 60px;
+      right: 0;
       width: 100%;
+      padding: 15px 0;
   }
 
-  .menu-centralizado li {
-      width: 100%;
-      text-align: center;
-  }
-
-  .form-contato h2 {
-      font-size: 0.9rem;
-  }
-}
-
-/* Responsivo - até 480px */
-@media (max-width: 480px) {
-  .btn-jogar-grande {
-      font-size: 0.6rem;
-      padding: 10px 15px;
-  }
-
-  .form-contato h2 {
-      font-size: 0.8rem;
-  }
-
-  nav .logo img {
-      height: 30px;
-  }
-
-  .icone-bmo img {
-      width: 40px;
+  /* Ativa o menu quando tiver classe "ativo" */
+  .menu-centralizado.ativo {
+      display: flex;
   }
 }
