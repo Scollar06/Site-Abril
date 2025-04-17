@@ -8,7 +8,7 @@
 /* Estilo global do corpo da página */
 body {
   font-family: 'Press Start 2P', monospace; /* Define a fonte principal */
-  font-size: 20px; /* Tamanho padrão da fonte */
+  font-size: 17px; /* Tamanho padrão da fonte */
   background-image: url('imagens/fundo.webp'); /* Imagem de fundo */
   background-size: cover; /* Cobre todo o fundo */
   background-position: center; /* Centraliza a imagem */
